@@ -2,6 +2,7 @@ package com.user.model;
 
 public class User {
 
+	private String studentID;
 	private String name;
 	private String email;
 	private String mob;
@@ -9,6 +10,12 @@ public class User {
 	private String dob;
 	private String address;
 	
+	public void setStudentID(String studentID) {
+		this.studentID = studentID;
+	}
+	public String getStudentID() {
+		return studentID;
+	}
 	public String getName() {
 		return name;
 	}

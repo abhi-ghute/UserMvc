@@ -1,10 +1,16 @@
 package com.user.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity
 public class UserEntity {
 
+	@Id
+	@GeneratedValue
+	private Integer id;
+	private String studentID;
 	private String name;
 	private String email;
 	private String mob;
@@ -12,6 +18,12 @@ public class UserEntity {
 	private String dob;
 	private String address;
 	
+	public void setStudentID(String studentID) {
+		this.studentID = studentID;
+	}
+	public String getStudentID() {
+		return studentID;
+	}
 	public String getName() {
 		return name;
 	}
